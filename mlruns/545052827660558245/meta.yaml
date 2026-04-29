@@ -1,0 +1,8 @@
+artifact_location: file:D:/TASK-2/mlruns/545052827660558245
+creation_time: 1777452353046
+experiment_id: '545052827660558245'
+last_update_time: 1777452353046
+lifecycle_stage: active
+name: sales_forecasting
+trace_location: null
+workspace: default
