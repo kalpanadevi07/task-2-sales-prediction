@@ -1,0 +1,39 @@
+Setup Instructions:
+ 1. Clone Project
+git clone https://github.com/kalpanadevi07/task-2-sales-prediction/
+cd sales_forecasting_mlops
+
+2. Create Virtual Environment
+python -m venv venv
+Activate:
+Windows:
+venv\Scripts\activate
+Mac/Linux:
+source venv/bin/activate
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Train Model Pipeline
+python ml/train.py
+
+5. Run FastAPI Backend
+uvicorn app.main:app --reload
+
+API runs at:
+
+http://127.0.0.1:8000
+
+Test endpoint:
+
+POST /predict
+6. Run Streamlit Dashboard
+streamlit run app/streamlit_app.py
+Open:
+http://localhost:8501
+
+8. Docker Deployment
+Build Image:
+docker build -t sales-forecast .
+Run Container:
+docker run -p 8000:8000 sales-forecast
